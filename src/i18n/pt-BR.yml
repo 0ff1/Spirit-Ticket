@@ -1,30 +1,30 @@
 buttons:
   accept_close_request:
-    emoji: ✅
+    emoji: <:accept:1378145286765154484>
     text: Aceitar
   cancel:
-    emoji: ➖
+    emoji: <:deny:1378145296046882856>
     text: Cancelar
   claim:
-    emoji: 🙌
+    emoji: <:claim:1378145290326114314>
     text: Assumir
   close:
-    emoji: ✖️
+    emoji: <:close:1378145293018595429>
     text: Fechar
   confirm_open:
-    emoji: ✅
+    emoji: <:accept:1378145286765154484>
     text: Criar ticket
   create:
     emoji: 🎫
     text: Criar um ticket
   edit:
-    emoji: ✏️
+    emoji: <:edit:1378145297368350871>
     text: Editar
   reject_close_request:
-    emoji: ✖️
+    emoji: <:deny:1378145296046882856>
     text: Rejeitar
   unclaim:
-    emoji: ◀️
+    emoji: <:abdicate:1378145285041033328>
     text: Abdicar
 commands:
   message:
@@ -45,11 +45,12 @@ commands:
         title: ✅ Mensagem fixada
   slash:
     add:
-      added: ➡️ {added} foi adicionado por {by}.
+      added: ➡️・{added} foi adicionado por {by}.
       description: Adicionar um membro a um ticket
       name: adicionar
       not_staff:
-        description: Apenas membros da equipe podem adicionar membros a tickets de
+        description:
+          Apenas membros da equipe podem adicionar membros a tickets de
           outros.
         title: ❌ Erro
       options:
@@ -92,8 +93,8 @@ commands:
       confirmed_multiple:
         description: Os canais serão excluídos em alguns segundos.
         title:
-        - ✅ Fechando %d ticket
-        - ✅ Fechando %d tickets
+          - ✅ Fechando %d ticket
+          - ✅ Fechando %d tickets
       description: Forçar o fechamento de um ticket
       name: fechamento-forcado
       no_tickets:
@@ -106,7 +107,8 @@ commands:
         title: ❌ Erro
       options:
         category:
-          description: Fechar todos os tickets na categoria especificada (deve ser
+          description:
+            Fechar todos os tickets na categoria especificada (deve ser
             usado com `time`)
           name: categoria
         reason:
@@ -134,7 +136,7 @@ commands:
       title: Ajuda
     move:
       description: Mover um ticket para outra categoria
-      moved: 🗃️ {by} moveu este ticket de **{from}** para **{to}**.
+      moved: 🗃️・{by} moveu este ticket de **{from}** para **{to}**.
       name: mover
       not_staff:
         description: Somente membros da equipe podem movimentar tickets.
@@ -174,7 +176,8 @@ commands:
       description: Remover um membro de um ticket
       name: remover
       not_staff:
-        description: Apenas membros da equipe podem remover membros dos tickets de
+        description:
+          Apenas membros da equipe podem remover membros dos tickets de
           outros.
         title: ❌ Erro
       options:
@@ -184,7 +187,7 @@ commands:
         ticket:
           description: O ticket do qual remover o membro
           name: ticket
-      removed: ⬅️ {removed} foi removido por {by}.
+      removed: ⬅️・{removed} foi removido por {by}.
       success:
         description: "{member} foi removido de {ticket}."
         title: ✅ Removido
@@ -230,7 +233,8 @@ commands:
       description: Obter a transcrição de um ticket
       name: transcrição
       not_staff:
-        description: Apenas membros da equipe podem ler as transcrições dos tickets
+        description:
+          Apenas membros da equipe podem ler as transcrições dos tickets
           de outros.
         title: ❌ Erro
       options:
@@ -247,8 +251,8 @@ commands:
         member:
           description: O membro para transferir a propriedade para
           name: membro
-      transferred: 📨 {user} transferiu este ticket para {to}.
-      transferred_from: 📨 {user} transferiu este ticket de {from} para {to}.
+      transferred: 📨・{user} transferiu este ticket para {to}.
+      transferred_from: 📨・{user} transferiu este ticket de {from} para {to}.
   user:
     create:
       name: Criar ticket para usuário
@@ -352,20 +356,21 @@ misc:
     title: ❌ Ticket inválido
   member_limit:
     description:
-    - Utilize seu ticket existente ou feche-o antes de criar outro.
-    - |
-      Feche um ticket antes de criar outro.
-      Use `/tickets` para visualizar seus tickets existentes.
+      - Utilize seu ticket existente ou feche-o antes de criar outro.
+      - |
+        Feche um ticket antes de criar outro.
+        Use `/tickets` para visualizar seus tickets existentes.
     title:
-    - ❌ Você já tem ticket aberto
-    - ❌ Você já tem %d tickets abertos
+      - ❌ Você já tem ticket aberto
+      - ❌ Você já tem %d tickets abertos
   missing_roles:
     description: >-
       Você não tem os cargos necessários para criar um ticket
       nesta categoria.
     title: ❌ Cargos insuficientes
   no_categories:
-    description: "Nenhuma categoria de ticket foi configurada.\nConfigure seu servidor
+    description:
+      "Nenhuma categoria de ticket foi configurada.\nConfigure seu servidor
       em {url}."
     title: ❌ Não há categorias de tickets
   not_ticket:
@@ -388,7 +393,8 @@ misc:
     fields:
       for_admins:
         name: Para administradores do servidor
-        value: "Foi fornecido um usuário ou função inválido, o que geralmente significa
+        value:
+          "Foi fornecido um usuário ou função inválido, o que geralmente significa
           que uma função da equipe foi excluída. [Clique aqui]({url}) para obter instruções
           de resolução.\n"
     title: ⚠️ Algo deu errado
@@ -407,7 +413,7 @@ modals:
 ticket:
   answers:
     no_value: "*Sem resposta*"
-  claimed: 🙌 {user} assumiu este ticket.
+  claimed: 🙌・{user} assumiu este ticket.
   close:
     closed:
       description: Este canal será excluído em alguns segundos…
@@ -415,7 +421,7 @@ ticket:
     forbidden:
       description: Você não tem permissão para fechar este ticket.
       title: ❌ Erro
-    rejected: ✋ {user} rejeitou uma solicitação para fechar este ticket.
+    rejected: ✋・{user} rejeitou uma solicitação para fechar este ticket.
     staff_request:
       archived: |2
 
@@ -426,8 +432,8 @@ ticket:
       title: ❓ Este ticket pode ser fechado?
     user_request:
       title: ❓ {requestedBy} deseja fechar este ticket
-    wait_for_staff: ✋ Aguarde até que a equipe feche este ticket.
-    wait_for_user: ✋ Aguarde a resposta do usuário.
+    wait_for_staff: ✋・Aguarde até que a equipe feche este ticket.
+    wait_for_user: ✋・Aguarde a resposta do usuário.
   closing_soon:
     description: |
       Este ticket será fechado devido à inatividade <t:{timestamp}:R>.
@@ -446,13 +452,14 @@ ticket:
       Continue a conversa ou {close} o ticket.
     title: ⏰ Este ticket está inativo
   offline:
-    description: Não há nenhum membro da equipe disponível no momento, então pode
+    description:
+      Não há nenhum membro da equipe disponível no momento, então pode
       demorar mais do que o normal para obter uma resposta.
     title: 😴 Não estamos online
   opening_message:
     content: |
       {staff}
-      {creator} criou um novo ticket
+      {creator}
     fields:
       topic: Tópico
   references_message:
@@ -465,13 +472,15 @@ ticket:
       number: Número
       topic: Tópico
     title: ℹ️ Referência
-  released: ♻️ {user} deixou de ser responsável por este ticket.
+  released: ♻️・{user} deixou de ser responsável por este ticket.
   working_hours:
     next:
-      description: Estaremos de volta às <t:{timestamp}:F> (<t:{timestamp}:R>), embora
+      description:
+        Estaremos de volta às <t:{timestamp}:F> (<t:{timestamp}:R>), embora
         você pode receber uma resposta antes disso.
       title: 🕗 Não estamos trabalhando no momento
     today:
-      description: Você pode receber uma resposta antes, mas só começaremos a trabalhar
+      description:
+        Você pode receber uma resposta antes, mas só começaremos a trabalhar
         <t:{timestamp}:t> hoje (<t:{timestamp}:R>).
       title: 🕗 Não estamos trabalhando no momento

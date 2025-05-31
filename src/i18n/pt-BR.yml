@@ -472,7 +472,7 @@ ticket:
       number: Número
       topic: Tópico
     title: ℹ️ Referência
-  released: ♻️・{user} deixou de ser responsável por este ticket.
+  released: ♻️・{user} abdicou o responsável por este ticket.
   working_hours:
     next:
       description:
